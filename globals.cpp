@@ -1,0 +1,53 @@
+// Function Declarations
+void drawScene();
+void drawDigit(int digit);
+void drawSubDigit(int i);
+void getScore(int value);
+void line(float x1, float y1,
+                        float x2, float y2);
+void draw_marker();
+void update(int value);
+void checkLeft(int i);
+void handleMouseclick1(int x, int y);
+void checkRight(int i);
+void drawBox(float len);
+void drawCircle(float rad);
+void drawBall(float rad);
+void drawTriangle();
+void assign_coins();
+void assign_striker();
+void initRendering();
+void handleResize(int w, int h);
+void handleKeypress1(unsigned char key, int x, int y);
+void handleKeypress2(int key, int x, int y);
+void handleMouseclick(int button, int state, int x, int y);
+void drawDblLine();
+void update_striker_speed(int value);
+void applyFriction(int i);
+// Global Variables
+struct timeval tim;
+double t1;
+
+float mouse_theta =90;
+int   score = 30;
+float x=-3,y=-3;
+float striker_velx = 0.00f;
+float striker_vely = 0.0f;
+float striker_x = 0.0f;
+float striker_y = -1.6;
+float striker_rad = 0.18;
+float striker_mass = 0.2;
+float ball_mass = 0.1;
+float ball_rad = 0.14f;
+float box_len = 5.0f;
+float tri_x = 0.0f;
+float tri_y = 0.0f;
+float theta = 0.0f; 
+float str_arr_x = 0;
+float str_arr_y = -0.6;
+float str_theta =- 90*3.14/180;
+float flag =1,flag0=0;
+int   flag1 = 1;
+int   count = 0;
+char  in_hole_flag = 'x';
+int   old_time;
